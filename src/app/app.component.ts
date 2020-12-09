@@ -8,8 +8,11 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'angular1';
   propriedade = 'Igor';
-  aluno:Aluno= {idade: 36, matricula: 123, nome: 'Igor Viana'};
-  
+  aluno:Aluno= {idade: 40, matricula: 123456, nome: 'Igor Andrade'};
+  fnEnviar(){
+    console.log("clicou no botão!");
+    console.log(this.aluno);
+  }
 }
 interface Aluno {
   matricula?:number,

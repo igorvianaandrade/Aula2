@@ -1,12 +1,44 @@
 <p>
     <label for="nome">Nome:</label>
-    <span>{{aluno.nome}}</span>    
+    <input type="text" [(ngModel)]="aluno.nome">
 </p>
 <p>
   <label for="matricula">Matricula:</label>
-  <span>{{aluno.matricula}}</span>    
+  <input type="text" [(ngModel)]="aluno.matricula">
 </p>
 <p>
   <label for="idade">Idade:</label>
-  <span>{{aluno.idade}}</span>    
+  <input type="text" [(ngModel)]="aluno.idade">
+</p>
+
+<input type="submit" value="Enviar" (click)="fnEnviar()">
+
+<br><br><br>
+
+<p>
+  <label for="nome">Nome:</label>
+  <span>{{aluno.nome}}</span>
+</p>
+<p>
+  <label for="matricula">Matricula:</label>
+  <span>{{aluno.matricula}}</span>
+</p>
+<p>
+  <label for="idade">Idade:</label>
+  <span>{{aluno.idade}}</span>
+</p>
+
+<br><br><br>
+
+<p>
+  <label for="nome">Nome:</label>
+  <input type="text" [value]="aluno.nome">   
+</p>
+<p>
+  <label for="matricula">Matricula:</label>
+  <input type="text" [value]="aluno.matricula">   
+</p>
+<p>
+  <label for="idade">Idade:</label>
+  <input type="text" [value]="aluno.idade">   
 </p>
