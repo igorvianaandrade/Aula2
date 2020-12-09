@@ -7,4 +7,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angular1';
+  propriedade = 'Igor';
+  aluno:Aluno= {idade: 36, matricula: 123, nome: 'Igor Viana'};
+  
 }
+interface Aluno {
+  matricula?:number,
+  nome?:string,
+  idade?:number
+}
+
